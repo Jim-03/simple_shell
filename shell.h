@@ -12,6 +12,20 @@
 #include <fcntl.h>
 #include <errno.h>
 
+/**
+ * listint - a singly linked list
+ * @num: integer
+ * @str: string
+ * @next: pointer to next node
+ */
+
+typedef struct listint
+{
+	int num;
+	char *str;
+	struct listint *next;
+} list_t;
+
 /* convertors from ASCII to integers */
 
 int delim_checker(char c, char *check);
