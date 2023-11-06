@@ -12,4 +12,10 @@
 #include <fcntl.h>
 #include <errno.h>
 
+/* convertors from ASCII to integers */
+int delim_checker(char c, char *check);
+int str_int(char* str);
+int is_alpha(char c);
+int shell_inter(info_t *info);
+
 #endif
