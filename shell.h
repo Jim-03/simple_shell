@@ -33,5 +33,9 @@ list_t *add_node_end(list_t **head, const char *str);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 size_t print_listint(const listint_t *h);
 void free_list(list_t *head);
+size_t listint_len(const listint_t *h);
+list_t *starts_with(list_t *head, char *prefix, char c);
+ssize_t get_node_index(list_t *h, list_t *n);
+char **list_to_strings(list_t *head);
 
 #endif
