@@ -58,5 +58,8 @@ char **list_to_strings(list_t *head);
 /* memory management */
 
 int free_NULL(void **ptr);
+void *_memset(void *p, size_t n, char b);
+void string_strings(char *str);
+void *re_alloc(void *ptr, size_t old, size_t newer);
 
 #endif
