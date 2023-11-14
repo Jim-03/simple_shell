@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * str_ int - converts a string to integer
+ * str_int - converts a string to integer
  * @str: the string to be converted
  * Return: the converted string
  */
 
-int str_int(char* str)
+int str_int(char *str)
 {
 	int i, x, convert = 0, state;
 

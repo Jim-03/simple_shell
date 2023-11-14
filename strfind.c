@@ -9,6 +9,7 @@
 
 char *start_(char *str, char *beg)
 {
-	for (; *beg && *beg == *str; *beg++, str++);
+	for (; *beg && *beg == *str; *beg++, str++)
+		;
 	return ((char *)str);
 }

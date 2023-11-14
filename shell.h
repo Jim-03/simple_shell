@@ -13,7 +13,7 @@
 #include <errno.h>
 
 /**
- * listint - a singly linked list
+ * struct listint - a singly linked list
  * @num: integer
  * @str: string
  * @next: pointer to next node
@@ -29,12 +29,18 @@ typedef struct listint
 /* convertors from ASCII to integers */
 
 int delim_checker(char c, char *check);
-int str_int(char* str);
+int str_int(char *str);
 int is_alpha(char c);
 int shell_inter(info_t *info);
 
 /* string functionalities */
 
+char *_strchr(char *s, char c);
+char *_strncpy(char *dest, char *src, int n);
+int count_words_2(char *str, char *s);
+char *allocate_copy_word(const char *str, int start, int length);
+int word_length(const char *str, char d, int *index);
+int count_words(const char *str, char d);
 char *_strcat(char *dest, char *src);
 int _putchar(char c);
 int _strcmp(char *s1, char *s2);
@@ -42,6 +48,8 @@ char *_strcpy(char *dest, char *src);
 char *_strdup(char *str);
 char *start_(char *str, char *beg);
 int _strlen(char *str);
+char **str_to_wrd(char *str, char *s);
+char **str_to_word(char *str, char d);
 
 /* lists */
 

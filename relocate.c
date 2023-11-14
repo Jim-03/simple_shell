@@ -4,7 +4,8 @@
  * re_alloc - reallocates memory
  * @ptr: the pointer to the memory
  * @old: the old memory size
- * @new: the new memory size
+ * @newer: the new memory size
+ * Return: the pointer to the memory
  */
 
 void *re_alloc(void *ptr, size_t old, size_t newer)

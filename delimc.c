@@ -11,7 +11,7 @@ int delim_checker(char c, char *check)
 {
 	int i = 0;
 
-	while(check[i] != '\0'))
+	while (check[i] != '\0')
 	{
 		if (check[i] == c)
 			return (1);

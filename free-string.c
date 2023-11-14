@@ -9,7 +9,7 @@ void string_strings(char *str)
 {
 	char **ptr = str;
 
-	if(str == NULL)
+	if (str == NULL)
 		return;
 
 	while (*str)
