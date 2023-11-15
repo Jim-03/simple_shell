@@ -133,4 +133,7 @@ void *_memset(void *p, size_t n, char b);
 void string_strings(char *str);
 void *re_alloc(void *ptr, size_t old, size_t newer);
 
+/* structure functionalities */
+
+int delim_chain(info_t *info, char *c, size_t *ptr);
 #endif
