@@ -178,6 +178,7 @@ char *find_env(info_t *info, const char *name);
 void clear(info_t *info);
 void add_info(info_t *info, char **av);
 void free_info(info_t *info, int all);
+ssize_t get_input(info_t *info);
 
 /* chain */
 ssize_t input_buf(info_t *info, char **buf, size_t *len);
