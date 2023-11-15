@@ -137,4 +137,5 @@ void *re_alloc(void *ptr, size_t old, size_t newer);
 
 int delim_chain(info_t *info, char *c, size_t *ptr);
 void _chain(info_t *info, char *c, size_t *ptr, size_t i, size_t length);
+int _replace(info_t *info);
 #endif
