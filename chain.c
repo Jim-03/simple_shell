@@ -9,7 +9,7 @@
  * @length: the length of the buffer
  */
 
-void _chain(info_t *info, char *c, size_t *ptr, size_t i, size_t lenth)
+void _chain(info_t *info, char *c, size_t *ptr, size_t i, size_t length)
 {
 	size_t j = *ptr;
 
