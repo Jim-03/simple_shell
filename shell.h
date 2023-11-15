@@ -154,5 +154,6 @@ int _exiter(info_t *info);
 void exit_error(info_t *info);
 int dir_changer(info_t *info);
 int rem_alias(info_t *info, char *str);
+int add_alias(info_t *info, char *str);
 
 #endif
