@@ -149,7 +149,8 @@ char *path_finder(char *pathstr, char *cmd);
 
 /* shell */
 int shell-main(info_t *info, char **av);
-int __exit(info_t *info);
+int _exiter(info_t *info);
 void exit_error(info_t *info);
+int dir_changer(info_t *info);
 
 #endif

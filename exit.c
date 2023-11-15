@@ -6,7 +6,7 @@
  * Return: -2 if the program should exit, 1 if there's an error.
  */
 
-int __exit(info_t *info)
+int _exiter(info_t *info)
 {
 	int val;
 
