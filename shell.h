@@ -176,6 +176,6 @@ char *find_env(info_t *info, const char *name);
 /* info */
 
 void clear(info_t *info);
-
+void add_info(info_t *info, char **av);
 
 #endif
