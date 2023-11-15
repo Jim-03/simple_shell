@@ -171,5 +171,11 @@ int print_list_env(info_t *info);
 int del_env(info_t *info);
 int delete_environment(info_t *info, char *var);
 int add_env_list(info_t *info);
+char *find_env(info_t *info, const char *name);
+
+/* info */
+
+void clear(info_t *info);
+
 
 #endif
