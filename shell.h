@@ -185,5 +185,6 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len);
 void process_input(info_t *info, char **buf, size_t *len, ssize_t r);
 ssize_t read_buf(info_t *info, char *buf, size_t *i);
 int _getline(info_t *info, char **ptr, size_t *length);
+void sigintHandler(__attribute__((unused)) int sig_num);
 
 #endif
