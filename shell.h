@@ -141,4 +141,7 @@ void _chain(info_t *info, char *c, size_t *ptr, size_t i, size_t length);
 int _replace(info_t *info);
 int var_rep(info_t *info);
 
+/* parsing */
+
+int is_exec(char *path);
 #endif
