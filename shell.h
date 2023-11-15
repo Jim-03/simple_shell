@@ -146,4 +146,7 @@ int var_rep(info_t *info);
 
 int is_exec(char *path);
 char *path_finder(char *pathstr, char *cmd);
+
+/* shell */
+int shell-main(info_t *info, char **av);
 #endif
