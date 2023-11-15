@@ -14,24 +14,24 @@
 
 #define INFO_INIT \
 { \
-    .field1 = NULL, \
-    .field2 = NULL, \
-    .field3 = NULL, \
-    .value1 = 0, \
-    .value2 = 0, \
-    .value3 = 0, \
-    .value4 = 0, \
-    .ptr1 = NULL, \
-    .ptr2 = NULL, \
-    .ptr3 = NULL, \
-    .ptr4 = NULL, \
-    .ptr5 = NULL, \
-    .size1 = 0, \
-    .size2 = 0, \
-    .str1 = NULL, \
-    .flag1 = 0, \
-    .flag2 = 0, \
-    .flag3 = 0 \
+	.field1 = NULL, \
+	.field2 = NULL, \
+	.field3 = NULL, \
+	.value1 = 0, \
+	.value2 = 0, \
+	.value3 = 0, \
+	.value4 = 0, \
+	.ptr1 = NULL, \
+	.ptr2 = NULL, \
+	.ptr3 = NULL, \
+	.ptr4 = NULL, \
+	.ptr5 = NULL, \
+	.size1 = 0, \
+	.size2 = 0, \
+	.str1 = NULL, \
+	.flag1 = 0, \
+	.flag2 = 0, \
+	.flag3 = 0 \
 }
 
 /**
@@ -49,7 +49,7 @@ typedef struct listint
 } list_t;
 
 /**
- * struct passinfo - stores pseudo-arguments
+ * struct pseudo_arg - stores pseudo-arguments
  * @arg: string argument
  * @argv: array of arg
  * @path: path to current command
@@ -70,22 +70,23 @@ typedef struct listint
  * @history: counts history
  */
 
-typedef struct passinfo {
-    char *arg;
-    char **argv;
-    char *path;
-    int argc;
-    unsigned int error;
-    int err_num;
-    int error_flag;
-    char *fname;
-    char **environ;
-    int change;
-    int status;
-    char **cmd_buf;
-    int chain;
-    int read_file;
-    int history;
+typedef struct pseudo_arg
+{
+	char *arg;
+	char **argv;
+	char *path;
+	int argc;
+	unsigned int error;
+	int err_num;
+	int error_flag;
+	char *fname;
+	char **environ;
+	int change;
+	int status;
+	char **cmd_buf;
+	int chain;
+	int read_file;
+	int history;
 } info_t;
 
 /* convertors from ASCII to integers */
