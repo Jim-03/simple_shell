@@ -12,6 +12,28 @@
 #include <fcntl.h>
 #include <errno.h>
 
+#define INFO_INIT \
+{ \
+    .field1 = NULL, \
+    .field2 = NULL, \
+    .field3 = NULL, \
+    .value1 = 0, \
+    .value2 = 0, \
+    .value3 = 0, \
+    .value4 = 0, \
+    .ptr1 = NULL, \
+    .ptr2 = NULL, \
+    .ptr3 = NULL, \
+    .ptr4 = NULL, \
+    .ptr5 = NULL, \
+    .size1 = 0, \
+    .size2 = 0, \
+    .str1 = NULL, \
+    .flag1 = 0, \
+    .flag2 = 0, \
+    .flag3 = 0 \
+}
+
 /**
  * struct listint - a singly linked list
  * @num: integer
@@ -25,6 +47,46 @@ typedef struct listint
 	char *str;
 	struct listint *next;
 } list_t;
+
+/**
+ * struct passinfo - stores pseudo-arguments
+ * @arg: string argument
+ * @argv: array of arg
+ * @path: path to current command
+ * @argc: number of arguments
+ * @error: number of errors
+ * @err_num: number of exits
+ * @error_flag: number of errors
+ * @fname: the file's name
+ * @env: local environment
+ * @environ: copy of environ from env
+ * @history: commands history
+ * @alias: command aliases
+ * @change: checks for change in environ
+ * @status: return status
+ * @cmd_buf: pointer to chain commands
+ * @chain: types of command chaining
+ * @read_file: file descriptor from which to read line input
+ * @history: counts history
+ */
+
+typedef struct passinfo {
+    char *arg;
+    char **argv;
+    char *path;
+    int argc;
+    unsigned int error;
+    int err_num;
+    int error_flag;
+    char *fname;
+    char **environ;
+    int change;
+    int status;
+    char **cmd_buf;
+    int chain;
+    int read_file;
+    int history;
+} info_t;
 
 /* convertors from ASCII to integers */
 
