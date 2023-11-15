@@ -153,5 +153,6 @@ int shell_main(info_t *info, char **av);
 int _exiter(info_t *info);
 void exit_error(info_t *info);
 int dir_changer(info_t *info);
+int rem_alias(info_t *info, char *str);
 
 #endif
