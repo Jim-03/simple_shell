@@ -12,6 +12,8 @@
 #include <fcntl.h>
 #include <errno.h>
 
+extern char **environ;
+
 #define INFO_INIT \
 { \
 	.field1 = NULL, \
@@ -168,5 +170,6 @@ int add_env(info_t *info);
 int print_list_env(info_t *info);
 int del_env(info_t *info);
 int delete_environment(info_t *info, char *var);
+int add_env_list(info_t *info);
 
 #endif

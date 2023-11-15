@@ -8,13 +8,14 @@
 
 int del_env(info_t *info)
 {
+	int i;
 	if (info->argc == 1)
 	{
 		print_error(info, "Too few arguments.\n");
 		return (1);
 	}
 
-	for (int i = 1; i < info->argc; i++)
+	for (i = 1; i < info->argc; i++)
 		delete_environment(info, info->argv[i]);
 	return (0);
 }
