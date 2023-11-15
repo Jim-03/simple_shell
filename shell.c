@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * shell-main - main loop for shell
+ * shell_main - main loop for shell
  * @info: the info_t structure
  * @av: cli arguments
  * Return: status of the last action
  */
 
-int shell-main(info_t *info, char **av)
+int shell_main(info_t *info, char **av)
 {
 	ssize_t in = 0;
 	int built = 0;

@@ -148,7 +148,8 @@ int is_exec(char *path);
 char *path_finder(char *pathstr, char *cmd);
 
 /* shell */
-int shell-main(info_t *info, char **av);
+int _history(info_t *info);
+int shell_main(info_t *info, char **av);
 int _exiter(info_t *info);
 void exit_error(info_t *info);
 int dir_changer(info_t *info);

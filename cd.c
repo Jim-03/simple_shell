@@ -1,7 +1,7 @@
 #include "shell.h"
 
-/*
- * @change_dir - changes the directory
+/**
+ * dir_changer - changes the directory
  * @info: the info_t structure.
  * Return: 0 on success, 1 on failure.
  */
@@ -16,7 +16,7 @@ int dir_changer(info_t *info)
 	if (!current)
 	{
 		_puts("TODO: >>getcwd failure emsg here<<\n");
-		return 1;
+		return (1);
 	}
 	if (!info->argv[1])
 		new = _getenv(info, "HOME=");

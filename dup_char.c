@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * @duplicate_characters - creates a substring from the characters in the string
+ * dup_chars - creates a substring from the characters in the string
  * @str: input string.
  * @start: the starting index
  * @stop: the stopping index
@@ -18,7 +18,7 @@ char *dup_chars(char *str, int start, int stop)
 	if (!buf)
 		return (NULL);
 
-    	for (i = start; i < stop; i++)
+	for (i = start; i < stop; i++)
 	{
 		if (pathstr[i] != ':')
 			buf[k++] = pathstr[i];

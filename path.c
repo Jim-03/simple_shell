@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * @path_finder - finds the full path of the given command in the specified path string
+ * path_finder - finds the full path of  given command in a string
  * @str: the string
  * @cmd: the command to find
  * Return: the path of the command if found, or NULL if not found
  */
 
-char *path_finder(char *pathstr, char *cmd)
+char *path_finder(char *str, char *cmd)
 {
 	char current_char;
 	int i = 0;

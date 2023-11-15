@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * __exit - handles the exit functionality in the shell program
+ * _exiter - handles the exit functionality in the shell program
  * @info: the info_t structure
  * Return: -2 if the program should exit, 1 if there's an error.
  */
@@ -34,8 +34,8 @@ int _exiter(info_t *info)
 
 void exit_error(info_t *info)
 {
-    info->status = 2;
-    print_error(info, "Illegal number: ");
-    fault_puts(info->argv[1]);
-    fault_putchar('\n');
+	info->status = 2;
+	print_error(info, "Illegal number: ");
+	fault_puts(info->argv[1]);
+	fault_putchar('\n');
 }
