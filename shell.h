@@ -145,4 +145,5 @@ int var_rep(info_t *info);
 /* parsing */
 
 int is_exec(char *path);
+char *path_finder(char *pathstr, char *cmd);
 #endif
