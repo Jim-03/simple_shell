@@ -166,5 +166,7 @@ int _alias(info_t *info);
 int add_environment(info_t *info, char *var, char *value);
 int add_env(info_t *info);
 int print_list_env(info_t *info);
+int del_env(info_t *info);
+int delete_environment(info_t *info, char *var);
 
 #endif
