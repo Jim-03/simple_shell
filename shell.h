@@ -158,4 +158,6 @@ int add_alias(info_t *info, char *str);
 int print_alias(list_t *node);
 int _alias(info_t *info);
 int print_list_env(info_t *info);
+char *find_env(info_t *info, const char *name);
+
 #endif
