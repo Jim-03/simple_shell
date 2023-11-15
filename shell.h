@@ -153,11 +153,18 @@ int shell_main(info_t *info, char **av);
 int _exiter(info_t *info);
 void exit_error(info_t *info);
 int dir_changer(info_t *info);
+
+/* alias */
+
 int rem_alias(info_t *info, char *str);
 int add_alias(info_t *info, char *str);
 int print_alias(list_t *node);
 int _alias(info_t *info);
+
+/* environment */
+
+int add_environment(info_t *info, char *var, char *value);
+int add_env(info_t *info);
 int print_list_env(info_t *info);
-char *find_env(info_t *info, const char *name);
 
 #endif
