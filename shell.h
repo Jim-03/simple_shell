@@ -114,6 +114,7 @@ int _strlen(char *str);
 char **str_to_wrd(char *str, char *s);
 char **str_to_word(char *str, char d);
 int str_rep(char **old, char *new_string);
+char *dup_chars(char *str, int start, int stop);
 
 /* lists */
 
