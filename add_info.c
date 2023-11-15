@@ -1,15 +1,9 @@
 #include "shell.h"
 
 /**
- * @brief Sets certain fields in the info_t structure based on command-line arguments.
- *
- * This function initializes or updates fields in the info_t structure
- * using command-line arguments. It converts the argument to an array of strings,
- * allocates memory if necessary, counts the number of arguments, and replaces
- * aliases and variables in the argument list.
- *
- * @param info Pointer to the info_t structure.
- * @param av   Command-line arguments array.
+ * add_info - sets fields in structure based on arguments
+ * @info: the info_t structure
+ * @av: ci arguments
  */
 void add_info(info_t *info, char **av)
 {

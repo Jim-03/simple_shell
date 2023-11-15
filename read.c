@@ -1,13 +1,21 @@
 #include "shell.h"
 
+/**
+ * get_input - gets line input
+ * @info: the struct
+ * Return: bytes read
+ */
+
 ssize_t get_input(info_t *info)
 {
-	static char *buf = NULL;
-	static size_t i = 0, len = 0;
+	static char *buf;
+	static size_t i, len;
 	ssize_t r = 0;
 	size_t j;
 	char **buf_p = &(info->arg), *p;
 
+	i = 0;
+	len = 0;
 	_putchar(-1);
 	r = input_buf(info, &buf, &len);
 	if (r == -1)

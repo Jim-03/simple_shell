@@ -1,11 +1,19 @@
 #include "shell.h"
 
+/**
+ * input_buf - buffers chains
+ * @info: the structure
+ * @buf: the buffer
+ * @len: the length
+ * Return: the bytes read
+ */
+
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
 	ssize_t r = 0;
-        size_t len_p = 0;
+	size_t len_p = 0;
 
-	if (!*len) 
+	if (!*len)
 	{
 		free(*buf);
 		*buf = NULL;
@@ -29,6 +37,14 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 	return (0);
 }
+
+/**
+ * process_input - Process the input buffer after reading a line
+ * @info: the struct
+ * @buf: the input buffer
+ * @len: the length variable
+ * @r: Bytes read
+ */
 
 void process_input(info_t *info, char **buf, size_t *len, ssize_t r)
 {

@@ -21,7 +21,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 		i = len = 0;
 		r = read_buf(info, buf, &len);
 		if (r == -1 || (r == 0 && len == 0))
-			return -1;
+			return (-1);
 	}
 
 	c = _strchr(buf + i, '\n');
@@ -30,7 +30,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	s = p && length ? *length : 0;
 	new_p = _realloc(p, s, s ? s + k : k + 1);
 	if (!new_p)
-		return p ? (free(p), -1) : -1;
+		return (p ? (free(p), -1) : -1);
 	if (s)
 		_strncat(new_p, buf + i, k - i);
 	else

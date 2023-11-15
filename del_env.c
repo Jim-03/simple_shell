@@ -9,6 +9,7 @@
 int del_env(info_t *info)
 {
 	int i;
+
 	if (info->argc == 1)
 	{
 		print_error(info, "Too few arguments.\n");

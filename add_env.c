@@ -14,7 +14,7 @@ int add_env(info_t *info)
 		return (1);
 	}
 	if (_add_environment(info, info->argv[1], info->argv[2]) == 0)
-		return 0;
+		return (0);
 	return (1);
 }
 
